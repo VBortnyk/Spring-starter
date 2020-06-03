@@ -1,8 +1,0 @@
-dev\spring\starter\config\AppConfig.class
-dev\spring\starter\service\UserService.class
-dev\spring\starter\dao\UserDaoImpl.class
-dev\spring\starter\model\User.class
-dev\spring\starter\Main.class
-dev\spring\starter\dao\UserDao.class
-dev\spring\starter\exceptions\DataProcessingException.class
-dev\spring\starter\service\UserServiceImpl.class
