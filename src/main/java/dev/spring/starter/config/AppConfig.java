@@ -4,7 +4,6 @@ import dev.spring.starter.model.User;
 import java.util.Properties;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
-import org.jboss.logging.Property;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -40,7 +39,7 @@ public class AppConfig {
         factoryBean.setDataSource(getDataSource());
         Properties props = new Properties();
         props.put("hibernate.show_sql", "create-drop");
-        props.put("hibernate.show_sql=true", "create-drop");
+        props.put("hibernate.hbm2ddl.auto", "create-drop");
         factoryBean.setHibernateProperties(props);
         factoryBean.setAnnotatedClasses(User.class);
         return factoryBean;
