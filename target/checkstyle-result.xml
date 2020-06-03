@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="C:\Mate-academy\spring-starter\src\main\java\dev\spring\starter\config\AppConfig.java">
+</file>
+<file name="C:\Mate-academy\spring-starter\src\main\java\dev\spring\starter\dao\UserDao.java">
+</file>
+<file name="C:\Mate-academy\spring-starter\src\main\java\dev\spring\starter\dao\UserDaoImpl.java">
+</file>
+<file name="C:\Mate-academy\spring-starter\src\main\java\dev\spring\starter\exceptions\DataProcessingException.java">
+</file>
+<file name="C:\Mate-academy\spring-starter\src\main\java\dev\spring\starter\Main.java">
+</file>
+<file name="C:\Mate-academy\spring-starter\src\main\java\dev\spring\starter\model\User.java">
+</file>
+<file name="C:\Mate-academy\spring-starter\src\main\java\dev\spring\starter\service\UserService.java">
+</file>
+<file name="C:\Mate-academy\spring-starter\src\main\java\dev\spring\starter\service\UserServiceImpl.java">
+</file>
+<file name="C:\Mate-academy\spring-starter\src\main\resources\db.properties">
+</file>
+</checkstyle>
