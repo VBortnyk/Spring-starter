@@ -38,20 +38,10 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public User get(Long id) {
-        try (Session session = sessionFactory.openSession()) {
-            Query<User> query = session.createQuery("FROM User WHERE id = :id", User.class);
-            query.setParameter("id", id);
-            return query.getSingleResult();
-        } catch (Exception e) {
-            throw new DataProcessingException("Failed to get user with id: " + id, e);
-        }
-    }
-
-    @Override
     public List<User> listUsers() {
         try (Session session = sessionFactory.openSession()) {
-            Query<User> query = session.createQuery("FROM User", User.class);
+            String selectQuery = "FROM User";
+            Query<User> query = session.createQuery(selectQuery, User.class);
             return query.getResultList();
         } catch (Exception e) {
             throw new DataProcessingException("Failed to get list of users", e);
