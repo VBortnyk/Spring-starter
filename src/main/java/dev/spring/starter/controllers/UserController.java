@@ -35,7 +35,7 @@ public class UserController {
         return new UserResponseDto(user);
     }
 
-    @GetMapping("/")
+    @GetMapping()
     public List<UserResponseDto> getAll() {
         List<User> users = userService.listUsers();
         List<UserResponseDto> dtoList = new ArrayList<>();
